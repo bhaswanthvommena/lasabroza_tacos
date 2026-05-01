@@ -109,10 +109,9 @@ export function Home() {
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
               <Link 
                 to="/menu"
-                className="group relative px-8 py-4 bg-orange-500 text-zinc-950 font-black text-lg tracking-widest uppercase overflow-hidden w-full sm:w-auto text-center"
+                className="group relative px-8 py-4 bg-transparent border-2 border-orange-500 text-orange-400 hover:bg-orange-500/15 hover:text-orange-300 font-black text-lg tracking-widest uppercase overflow-hidden w-full sm:w-auto text-center transition-all duration-300 backdrop-blur-sm"
               >
-                <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0" />
-                <span className="relative z-10 flex items-center justify-center gap-2 group-hover:text-zinc-950 transition-colors">
+                <span className="relative z-10 flex items-center justify-center gap-2">
                   Order Now
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </span>

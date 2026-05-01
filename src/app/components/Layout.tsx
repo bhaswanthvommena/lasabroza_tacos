@@ -201,6 +201,7 @@ export function Layout() {
         </div>
         <div className="container mx-auto px-6 text-center border-t border-zinc-800 pt-8 text-zinc-600 text-sm">
           <p>&copy; {new Date().getFullYear()} La Sabroza Tacos. All rights reserved.</p>
+          <p className="mt-2">Designed by Bhaswanth Vommena</p>
         </div>
       </footer>
     </div>
