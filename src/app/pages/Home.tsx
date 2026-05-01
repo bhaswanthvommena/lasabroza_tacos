@@ -239,7 +239,7 @@ export function Home() {
                 <img 
                   src={FOOD_TRUCK_IMG} 
                   alt="La Sabroza Food Truck" 
-                  className="absolute inset-0 w-full h-full object-cover z-10 grayscale hover:grayscale-0 transition-all duration-500"
+                  className="absolute inset-0 w-full h-full object-cover z-10 grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-500"
                 />
               </motion.div>
             </div>

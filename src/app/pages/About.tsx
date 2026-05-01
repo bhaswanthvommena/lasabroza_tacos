@@ -15,7 +15,7 @@ export function About() {
       {/* Hero */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-40 grayscale"
+          className="absolute inset-0 bg-cover bg-center opacity-40 grayscale-0 md:grayscale"
           style={{ backgroundImage: `url(${AUSTIN_IMG})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
@@ -73,7 +73,7 @@ export function About() {
                className="relative aspect-square"
              >
                <div className="absolute inset-0 bg-orange-500 translate-x-4 translate-y-4" />
-               <img src={CHEF_IMG} alt="Chef cooking" className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 z-10" />
+               <img src={CHEF_IMG} alt="Chef cooking" className="absolute inset-0 w-full h-full object-cover grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-700 z-10" />
                <div className="absolute -bottom-8 -left-8 bg-zinc-900 p-6 border-l-4 border-orange-500 z-20 shadow-2xl">
                  <h4 className="text-white font-black uppercase text-xl mb-1">Chef Mateo</h4>
                  <p className="text-zinc-400 text-sm">Head Pitmaster</p>
@@ -89,7 +89,7 @@ export function About() {
                className="relative aspect-[4/3] order-2 lg:order-1"
              >
                <div className="absolute inset-0 border-2 border-zinc-800 -translate-x-4 -translate-y-4" />
-               <img src={STREET_TACOS} alt="Street Tacos" className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 z-10" />
+               <img src={STREET_TACOS} alt="Street Tacos" className="absolute inset-0 w-full h-full object-cover grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-700 z-10" />
              </motion.div>
 
              <motion.div 
