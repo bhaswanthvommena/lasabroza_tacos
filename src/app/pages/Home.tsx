@@ -31,7 +31,7 @@ export function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* 3D Animated Hero Section */}
-      <section className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex items-center justify-center -mt-[88px] pt-32 pb-20">
+      <section className="relative min-h-[76vh] md:min-h-[82vh] w-full overflow-hidden flex items-center justify-center -mt-[88px] pt-18 md:pt-20 pb-12 md:pb-14">
         {/* Background Video */}
         <motion.video
           className="absolute inset-0 z-0 w-full h-full object-cover"
@@ -78,7 +78,7 @@ export function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-30 container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between mt-20">
+        <div className="relative z-30 container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between mt-2 md:mt-4">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,20 +89,20 @@ export function Home() {
                initial={{ opacity: 0, scale: 0.8 }}
                animate={{ opacity: 1, scale: 1 }}
                transition={{ duration: 0.5, delay: 0.5 }}
-               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-orange-500/30 backdrop-blur-md mb-8 text-orange-400 font-bold tracking-widest text-sm uppercase shadow-[0_0_15px_rgba(249,115,22,0.2)]"
+               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-orange-500/30 backdrop-blur-md mb-3 text-orange-400 font-bold tracking-widest text-sm uppercase shadow-[0_0_15px_rgba(249,115,22,0.2)]"
             >
               <Flame size={16} className="text-orange-500 animate-pulse" />
               <span>Manor's Hottest Food Truck</span>
             </motion.div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-none tracking-tighter uppercase mb-6 drop-shadow-2xl">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-none tracking-tighter uppercase mb-4 drop-shadow-2xl">
               Taste The <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 drop-shadow-[0_0_30px_rgba(249,115,22,0.4)]">
                 Fire.
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-zinc-300 mb-10 max-w-xl font-medium leading-relaxed drop-shadow-md">
+            <p className="text-lg md:text-xl text-zinc-300 mb-6 max-w-xl font-medium leading-relaxed drop-shadow-md">
               Authentic, bold, and unapologetically loud flavors cracking open on every plate. 
             </p>
             
@@ -131,7 +131,7 @@ export function Home() {
             initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1, delay: 0.8, type: "spring" }}
-            className="hidden lg:flex relative w-48 h-48 mt-12 md:mt-0 items-center justify-center"
+            className="hidden lg:flex relative w-48 h-48 mt-10 md:mt-0 lg:self-end lg:mb-10 items-center justify-center"
           >
              <div className="absolute inset-0 border-2 border-orange-500 border-dashed rounded-full animate-[spin_10s_linear_infinite]" />
              <div className="w-36 h-36 bg-zinc-900 rounded-full flex flex-col items-center justify-center border-4 border-zinc-950 shadow-2xl z-10">
